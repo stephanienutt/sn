@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 1133.86 566.93'>
+<defs>
+  <style type='text/css'><![CDATA[
+    line, polyline, path, rect, circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<rect x='0.00' y='0.00' width='1133.86' height='566.93' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+<defs>
+  <clipPath id='cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc='>
+    <rect x='177.50' y='69.89' width='950.88' height='458.44' />
+  </clipPath>
+</defs>
+<polyline points='177.50,475.43 1128.38,475.43 ' style='stroke-width: 1.07; stroke: #CBCBCB; stroke-linecap: butt;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<polyline points='177.50,387.27 1128.38,387.27 ' style='stroke-width: 1.07; stroke: #CBCBCB; stroke-linecap: butt;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<polyline points='177.50,299.11 1128.38,299.11 ' style='stroke-width: 1.07; stroke: #CBCBCB; stroke-linecap: butt;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<polyline points='177.50,210.95 1128.38,210.95 ' style='stroke-width: 1.07; stroke: #CBCBCB; stroke-linecap: butt;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<polyline points='177.50,122.79 1128.38,122.79 ' style='stroke-width: 1.07; stroke: #CBCBCB; stroke-linecap: butt;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<rect x='220.72' y='347.60' width='27.68' height='79.34' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; fill: #FF0000;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<rect x='220.72' y='83.12' width='864.44' height='79.34' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; fill: #FF0000;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<rect x='220.72' y='259.44' width='126.70' height='79.34' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; fill: #FF0000;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<rect x='220.72' y='435.76' width='14.14' height='79.34' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; fill: #FF0000;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<rect x='220.72' y='171.28' width='259.25' height='79.34' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; fill: #FF0000;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<line x1='220.72' y1='528.33' x2='220.72' y2='69.89' style='stroke-width: 1.07; stroke-linecap: butt;' clip-path='url(#cpMTc3LjV8MTEyOC4zOHw1MjguMzI4fDY5Ljg5MTc=)' />
+<defs>
+  <clipPath id='cpMHwxMTMzLjg2fDU2Ni45Mjl8MA=='>
+    <rect x='0.00' y='0.00' width='1133.86' height='566.93' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMHwxMTMzLjg2fDU2Ni45Mjl8MA==)'><text x='54.49' y='481.89' style='font-size: 18.00px; fill: #222222; font-family: Helvetica;' textLength='118.08px' lengthAdjust='spacingAndGlyphs'>other/unknown</text></g>
+<g clip-path='url(#cpMHwxMTMzLjg2fDU2Ni45Mjl8MA==)'><text x='5.48' y='393.72' style='font-size: 18.00px; fill: #222222; font-family: Helvetica;' textLength='167.09px' lengthAdjust='spacingAndGlyphs'>asian/pacific islander</text></g>
+<g clip-path='url(#cpMHwxMTMzLjg2fDU2Ni45Mjl8MA==)'><text x='106.53' y='305.56' style='font-size: 18.00px; fill: #222222; font-family: Helvetica;' textLength='66.04px' lengthAdjust='spacingAndGlyphs'>hispanic</text></g>
+<g clip-path='url(#cpMHwxMTMzLjg2fDU2Ni45Mjl8MA==)'><text x='130.55' y='217.40' style='font-size: 18.00px; fill: #222222; font-family: Helvetica;' textLength='42.02px' lengthAdjust='spacingAndGlyphs'>white</text></g>
+<g clip-path='url(#cpMHwxMTMzLjg2fDU2Ni45Mjl8MA==)'><text x='130.55' y='129.24' style='font-size: 18.00px; fill: #222222; font-family: Helvetica;' textLength='42.02px' lengthAdjust='spacingAndGlyphs'>black</text></g>
+<g clip-path='url(#cpMHwxMTMzLjg2fDU2Ni45Mjl8MA==)'><text x='215.72' y='548.96' style='font-size: 18.00px; fill: #222222; font-family: Helvetica;' textLength='10.01px' lengthAdjust='spacingAndGlyphs'>0</text></g>
+<g clip-path='url(#cpMHwxMTMzLjg2fDU2Ni45Mjl8MA==)'><text x='532.20' y='548.96' style='font-size: 18.00px; fill: #222222; font-family: Helvetica;' textLength='60.06px' lengthAdjust='spacingAndGlyphs'>500000</text></g>
+<g clip-path='url(#cpMHwxMTMzLjg2fDU2Ni45Mjl8MA==)'><text x='868.70' y='548.96' style='font-size: 18.00px; fill: #222222; font-family: Helvetica;' textLength='70.08px' lengthAdjust='spacingAndGlyphs'>1000000</text></g>
+<g clip-path='url(#cpMHwxMTMzLjg2fDU2Ni45Mjl8MA==)'><text x='177.50' y='58.39' style='font-size: 22.00px; font-family: Helvetica;' textLength='825.43px' lengthAdjust='spacingAndGlyphs'>African American drivers got stopped the most in the city of Philadelphia,Pensylvania</text></g>
+<g clip-path='url(#cpMHwxMTMzLjg2fDU2Ni45Mjl8MA==)'><text x='177.50' y='25.64' style='font-size: 28.00px; font-weight: bold; fill: #222222; font-family: Helvetica;' textLength='331.45px' lengthAdjust='spacingAndGlyphs'>Stopped Drivers by Race</text></g>
+</svg>

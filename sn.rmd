@@ -15,8 +15,8 @@ library(tidyverse)
 library(lubridate)
 
 #load the data
-hn <- read_csv("~/Desktop/Code/pa_philadelphia_2019_02_25.csv")
-hn <- read_csv("https://datajournalism.tech/pa_philadelphia_2019_02_25.csv")
+#sn <- read_csv("~/Desktop/Code/pa_philadelphia_2019_02_25.csv")
+sn <- read_csv("https://datajournalism.tech/pa_philadelphia_2019_02_25.csv")
 ```
 
 ## Data Analysis
@@ -24,25 +24,25 @@ Explore the dataset provided by Stanford University. See more on their website
  <https://openpolicing.stanford.edu>.
  
 ```{r discover-the-dataset}
-View(hn) #to view the data table
-str(hn)  #to see the characteristics of variables
-glimpse(hn) #to see a short summary of values in each column
-colnames(hn) #to view column headers
-hn <- hn %>% mutate(subject_sex=as.factor(subject_sex)) #convert chr to factor levels for the variable `subject_sex`
-hn <- hn %>% mutate(subject_race=as.factor(subject_race)) #convert chr to factor levels for the variable `subject_race`
+View(sn) #to view the data table
+str(sn)  #to see the characteristics of variables
+glimpse(sn) #to see a short summary of values in each column
+colnames(sn) #to view column headers
+sn <- sn %>% mutate(subject_sex=as.factor(subject_sex)) #convert chr to factor levels for the variable `subject_sex`
+sn <- sn %>% mutate(subject_race=as.factor(subject_race)) #convert chr to factor levels for the variable `subject_race`
 ```
 After viewing the dataset, you can analyze it to see the min, max, mean, median and other values for each variable. These are called descriptive statistics.
 
 ```{r run-basic-descriptive-statistics}
-summary(hn)
+summary(sn)
 ```
 
 There are some verbs that you need to memorize. See more at <https://learn.r-journalism.com/en/wrangling/dplyr/dplyr/>
 First, the `select` verb helps you grab column(s) in a dataset
 
 ```{r select-one-or-more-columns}
-a <- select(hn,subject_race, subject_age, subject_sex, type, contraband_found, arrest_made) #to select the subject_race columns and assign it to object a.
-a <- hn %>% select(subject_race) #a different way to do the selection using %>% 
+a <- select(sn,subject_race, subject_age, subject_sex, type, contraband_found, arrest_made) #to select the subject_race columns and assign it to object a.
+#a <- sn %>% select(subject_race) #a different way to do the selection using %>% 
 
 b <- filter(a, subject_age==10)
 
@@ -53,12 +53,12 @@ b <- group_by(b,arrest_made) %>% summarize(value=n())
 Second, the `group_by` verb helps you categorize your values into fewer groups. The `summarize` verb always goes along with the `group_by` to help count the number of values for each group and compute the percentage of each group over the whole population.
 
 ```{r calculate-statistics-for-each-level-of-a-column }
-sex <- hn %>% group_by(subject_sex) %>% 
+sex <- sn %>% group_by(subject_sex) %>% 
   summarize(value=n(), prop = value/nrow(.))
 # to count the numbers of stopped drivers for each gender and compute the percentage of column and assign it to a table called `sex`
 View(sex) # to view the `sex` table
 
-race <- hn %>% group_by(subject_race) %>% 
+race <- sn %>% group_by(subject_race) %>% 
   summarize(value=n(), prop=value/nrow(.)) %>% 
   arrange(-value) # to count the numbers of stopped drivers for each race and compute the percentage of column and assign it to a table called `race`. Also, arrange the value in the descending order
 View(race) # to view the `race` table
@@ -85,7 +85,7 @@ To create this chart, we will use the `ggplot2` package.
 Let's create a simple line chart by modifying the code on the Stanford University's Open Policing Project website. This chart displays the total numbers of drivers who got stopped by the police over the year.
 
 ```{r line-chart}
-line <- hn %>% 
+line <- sn %>% 
   count(year = year(date), subject_race) %>% 
   ggplot(aes(x = year, y = n, color = subject_race)) +
   geom_point() +
@@ -99,7 +99,7 @@ line
 ###Bar Chart
 ```{r bar-chart}
 #data prep
-barprep <- hn %>% group_by(subject_race) %>% 
+barprep <- sn %>% group_by(subject_race) %>% 
   summarize(value=n())
 
 #make the plot
@@ -143,7 +143,7 @@ The following pie will be made with the `plotly` package.
 #install.packages("plotly")
 library(plotly)
 
-pieprep <- hn %>% group_by(subject_race) %>% 
+pieprep <- sn %>% group_by(subject_race) %>% 
   summarize(value=n()) %>% 
   arrange(-value)
 
@@ -164,7 +164,7 @@ plot_ly(data=pieprep, labels=~subject_race, values=~value, showlegend=F) %>%
   layout(title="Stopped Drivers by Race")
 
 #The second way of creating a donut
-donut <- hn %>% group_by(subject_race) %>% 
+donut <- sn %>% group_by(subject_race) %>% 
   summarise(value=n()) %>% 
 plot_ly(labels=~subject_race, values=~value, showlegend=F) %>% 
   add_pie(hole=.5) %>% 
@@ -196,7 +196,7 @@ counties <- map_data("county")
 world <- map_data("world2Hires")
 
 #filter the year 2017
-f <- filter(hn, year(date)==2017)
+f <- filter(sn, year(date)==2017)
 
 #filter Philadelphia, PA
 philly <- filter(counties, region=="pennsylvania", subregion=="philadelphia")
